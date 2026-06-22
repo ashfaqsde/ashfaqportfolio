@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Ashfaq — Cloud DevOps & SRE Engineer</title>
+<meta name="description" content="Mohamed Ashfaq — Linux Administrator, AWS Cloud Engineer, DevOps & SRE Engineer based in Bengaluru, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="net-canvas"></canvas>
+<div class="grid-overlay"></div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <span class="nav-logo">MA<span class="dot">.</span><span class="cursor-blink">_</span></span>
+  <div class="nav-links">
+    <a href="#about">about</a>
+    <a href="#experience">experience</a>
+    <a href="#skills">skills</a>
+    <a href="#education">education</a>
+    <a href="#certs">certifications</a>
+    <a href="#contact">contact</a>
+  </div>
+  <div class="nav-actions">
+    <a class="nav-resume" href="Mohamed_Ashfaq_Resume.pdf" download>
+      <span>resume.pdf</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+    </a>
+    <a class="nav-github" href="https://github.com/ashfaqsde" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+    </a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+
+    <div class="hero-text">
+      <p class="eyebrow"><span class="status-dot"></span> available for opportunities · bengaluru, in</p>
+      <h1 class="hero-name">MOHAMED<br>ASHFAQ</h1>
+      <h2 class="hero-tagline">I automate chaos into order.</h2>
+      <p class="hero-sub">Linux Admin · AWS Cloud Engineer · DevOps & SRE — turning fragile manual ops into automated, observable, self-healing systems. 8 months deep in the trenches with EC2 to EKS, Jenkins to GitOps.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="Mohamed_Ashfaq_Resume.pdf" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          Download Resume
+        </a>
+        <a class="btn btn-ghost" href="mailto:ashfaqsde@gmail.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4V4z"/><path d="M22 6l-10 7L2 6"/></svg>
+          Email
+        </a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/mohamedashfaq" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/ashfaqsde" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          GitHub
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <a href="tel:+918903707362" class="meta-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          +91 89037 07362
+        </a>
+        <span class="meta-item">Bengaluru, Karnataka, India</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="photo-frame">
+        <div class="photo-glow"></div>
+        <img src="20260111_170335-1.png" alt="Mohamed Ashfaq" class="profile-photo">
+      </div>
+
+      <div class="terminal-card" aria-hidden="true">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">ashfaq@prod-east-1 ~</span>
+        </div>
+        <div class="terminal-body">
+          <span class="terminal-line" id="terminal-text"></span><span class="caret">▌</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scroll-cue"><span></span>scroll</div>
+</header>
+
+<main>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <p class="section-label">// 01_about</p>
+  <div class="about-grid">
+    <h3 class="section-heading">Building cloud infrastructure<br>that <em>just works</em>.</h3>
+    <div class="about-copy">
+      <p>I'm an MCA graduate who spent the last 8 months going all-in on Linux administration, AWS, and the full DevOps toolchain at Apponix Technologies, Bengaluru — and came out the other side able to design and deploy scalable, multi-tier cloud architectures from scratch.</p>
+      <p>My day-to-day spans hardening RHEL/Ubuntu boxes, wiring up CI/CD pipelines in Jenkins and GitHub Actions, containerizing apps with Docker and Kubernetes, and codifying infrastructure with Terraform and CloudFormation. I've touched 20+ AWS services — EC2, S3, IAM, VPC, Lambda, RDS, CloudWatch — and I genuinely like the part where things break and you find out why.</p>
+      <p>Looking to bring that energy to a team as a <strong>Linux Administrator</strong>, <strong>AWS Cloud Engineer</strong>, or <strong>DevOps/SRE Engineer</strong>.</p>
+    </div>
+  </div>
+  <div class="stat-strip">
+    <div class="stat"><span class="stat-num">20+</span><span class="stat-label">AWS services deployed</span></div>
+    <div class="stat"><span class="stat-num">8</span><span class="stat-label">months hands-on training</span></div>
+    <div class="stat"><span class="stat-num">83%</span><span class="stat-label">faster CI/CD deploys</span></div>
+    <div class="stat"><span class="stat-num">75%</span><span class="stat-label">faster issue detection</span></div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <p class="section-label">// 02_experience</p>
+  <h3 class="section-heading">Where the hands-on hours went.</h3>
+
+  <div class="timeline">
+    <div class="timeline-entry">
+      <div class="timeline-rail">
+        <span class="rail-dot"></span>
+        <span class="rail-line"></span>
+      </div>
+      <div class="timeline-content glass-card">
+        <div class="timeline-head">
+          <div>
+            <h4>Linux, AWS & DevOps Internship Program</h4>
+            <p class="timeline-org">Apponix Technologies — Bengaluru</p>
+          </div>
+          <span class="timeline-date">Oct 2025 – May 2026</span>
+        </div>
+        <p class="timeline-desc">8-month intensive program covering Red Hat Linux, AWS (28+ service modules), Docker, Kubernetes, Jenkins, Ansible, Maven, and Git — the foundation everything below is built on.</p>
+        <ul class="timeline-list">
+          <li>Administered RHEL/Ubuntu servers — file systems, user/group admin, SELinux, cron, systemd, and Bash automation that cut manual effort across repetitive workflows.</li>
+          <li>Deployed and managed 15+ AWS services (EC2, S3, IAM, VPC, RDS, Lambda, CloudFormation, CloudFront, Route 53, DynamoDB) into secure, multi-tier architectures.</li>
+          <li>Built end-to-end CI/CD pipelines in Jenkins and GitHub Actions — fully automated image builds and deployments on every Git push.</li>
+          <li>Orchestrated containerized workloads on Kubernetes: Pods, Deployments, Services, ConfigMaps, Secrets, NetworkPolicies.</li>
+          <li>Automated provisioning of 5+ Linux hosts with Ansible playbooks for consistent, repeatable environments.</li>
+          <li>Monitored infrastructure via CloudWatch dashboards/alarms and practiced DevSecOps: least-privilege IAM, VPC isolation, SG hardening, SELinux.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span>RHEL</span><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>Ansible</span><span>Git</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="subheading">Selected Projects</h4>
+  <div class="project-grid">
+
+    <article class="project-card glass-card">
+      <div class="project-top">
+        <h5>Linux User & Permission Management System</h5>
+        <span class="impact-pill">−70% admin time</span>
+      </div>
+      <p>Bash-driven account lifecycle and RBAC system across 50+ Linux users and 10+ directories, with cron-scheduled backups and full sudo/login audit logging.</p>
+      <div class="timeline-tags"><span>Bash</span><span>RHEL</span><span>cron</span><span>ACLs</span></div>
+    </article>
+
+    <article class="project-card glass-card">
+      <div class="project-top">
+        <h5>AWS Multi-Tier Cloud Infrastructure</h5>
+        <span class="impact-pill">−60% deploy time</span>
+      </div>
+      <p>3-tier architecture — EC2 web layer, private RDS subnet, S3 static storage — provisioned via CloudFormation with 15+ least-privilege IAM policies and zero unauthorized subnet access.</p>
+      <div class="timeline-tags"><span>EC2</span><span>VPC</span><span>RDS</span><span>CloudFormation</span></div>
+    </article>
+
+    <article class="project-card glass-card">
+      <div class="project-top">
+        <h5>Infrastructure Monitoring & Alerting</h5>
+        <span class="impact-pill">−75% detection time</span>
+      </div>
+      <p>Centralized Prometheus monitoring across 5+ servers and 10+ containers, with 15+ alert rules and 4 Grafana dashboards tracking CPU, memory, disk, and uptime.</p>
+      <div class="timeline-tags"><span>Prometheus</span><span>Grafana</span><span>Docker</span></div>
+    </article>
+
+    <article class="project-card glass-card">
+      <div class="project-top">
+        <h5>End-to-End CI/CD Pipeline</h5>
+        <span class="impact-pill">30min → 5min</span>
+      </div>
+      <p>Jenkins pipeline: GitHub pull → Maven build → Docker image → container deploy, with webhook-triggered builds and Docker Hub versioning for full traceability.</p>
+      <div class="timeline-tags"><span>Jenkins</span><span>Maven</span><span>Docker Hub</span></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <p class="section-label">// 03_skills</p>
+  <h3 class="section-heading">The stack, end to end.</h3>
+
+  <div class="bento">
+
+    <div class="bento-card bento-lg glass-card">
+      <h5><span class="bento-icon">☁</span> Cloud — AWS</h5>
+      <div class="chip-row">
+        <span class="chip chip-accent">EC2</span><span class="chip chip-accent">S3</span><span class="chip chip-accent">IAM</span><span class="chip chip-accent">VPC</span><span class="chip chip-accent">RDS</span><span class="chip chip-accent">Lambda</span><span class="chip">CloudWatch</span><span class="chip">CloudFormation</span><span class="chip">API Gateway</span><span class="chip">DynamoDB</span><span class="chip">Route 53</span><span class="chip">CloudFront</span><span class="chip">ELB</span><span class="chip">Auto Scaling</span><span class="chip">Elastic Beanstalk</span><span class="chip">SQS</span><span class="chip">Systems Manager</span>
+      </div>
+    </div>
+
+    <div class="bento-card glass-card">
+      <h5><span class="bento-icon">⎈</span> Containers & Orchestration</h5>
+      <div class="chip-row">
+        <span class="chip chip-accent">Docker</span><span class="chip chip-accent">Kubernetes</span><span class="chip">Compose</span><span class="chip">Helm-style configs</span>
+      </div>
+    </div>
+
+    <div class="bento-card glass-card">
+      <h5><span class="bento-icon">⚙</span> CI/CD & DevOps</h5>
+      <div class="chip-row">
+        <span class="chip chip-accent">Jenkins</span><span class="chip chip-accent">GitHub Actions</span><span class="chip">Git</span><span class="chip">Maven</span><span class="chip">Terraform</span>
+      </div>
+    </div>
+
+    <div class="bento-card glass-card">
+      <h5><span class="bento-icon">▤</span> Linux / OS</h5>
+      <div class="chip-row">
+        <span class="chip chip-accent">RHEL</span><span class="chip chip-accent">Ubuntu</span><span class="chip">SELinux</span><span class="chip">systemd</span><span class="chip">cron</span><span class="chip">yum/dnf/apt</span>
+      </div>
+    </div>
+
+    <div class="bento-card glass-card">
+      <h5><span class="bento-icon">▦</span> Observability</h5>
+      <div class="chip-row">
+        <span class="chip chip-accent">Prometheus</span><span class="chip chip-accent">Grafana</span><span class="chip">CloudWatch</span><span class="chip">Log Analysis</span>
+      </div>
+    </div>
+
+    <div class="bento-card glass-card">
+      <h5><span class="bento-icon">&gt;_</span> Scripting</h5>
+      <div class="chip-row">
+        <span class="chip chip-accent">Bash</span><span class="chip chip-accent">Python</span>
+      </div>
+    </div>
+
+    <div class="bento-card bento-wide glass-card">
+      <h5><span class="bento-icon">⛨</span> Networking & Security</h5>
+      <div class="chip-row">
+        <span class="chip chip-accent">TCP/IP</span><span class="chip chip-accent">DNS</span><span class="chip">HTTP/HTTPS</span><span class="chip">SSH</span><span class="chip">VPC Design</span><span class="chip">Subnetting</span><span class="chip">Security Groups</span><span class="chip">Firewalls</span><span class="chip">Load Balancing</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <p class="section-label">// 04_education</p>
+  <h3 class="section-heading">Academic foundation.</h3>
+
+  <div class="edu-grid">
+    <div class="edu-card glass-card">
+      <span class="edu-deg">MCA</span>
+      <h5>Master of Computer Applications</h5>
+      <p class="timeline-org">BSA Crescent Institute of Science and Technology, Chennai</p>
+      <p class="edu-date">Aug 2023 – Jun 2025</p>
+    </div>
+    <div class="edu-card glass-card">
+      <span class="edu-deg">BCA</span>
+      <h5>Bachelor of Computer Applications</h5>
+      <p class="timeline-org">CMS College of Science and Commerce, Coimbatore</p>
+      <p class="edu-date">Aug 2020 – Jun 2023</p>
+    </div>
+  </div>
+
+  <div class="lang-strip">
+    <span class="lang-label">Languages</span>
+    <span class="chip">English — Professional</span>
+    <span class="chip">Tamil — Native</span>
+    <span class="chip">Kannada — Basic</span>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="section" id="certs">
+  <p class="section-label">// 05_certifications</p>
+  <p class="terminal-cmd">$ ls -la ~/certifications</p>
+  <h3 class="section-heading">Credentials on file.</h3>
+
+  <div class="cert-grid">
+    <div class="cert-card glass-card">
+      <div class="cert-top">
+        <span class="cert-icon">⌬</span>
+        <span class="cert-status">✓ verified</span>
+      </div>
+      <h5>Red Hat Linux System Administration</h5>
+      <p class="timeline-org">Apponix Technologies, Bengaluru</p>
+      <p class="cert-date">Oct 2025 – May 2026</p>
+    </div>
+
+    <div class="cert-card glass-card">
+      <div class="cert-top">
+        <span class="cert-icon">☁</span>
+        <span class="cert-status">✓ verified</span>
+      </div>
+      <h5>AWS Cloud Engineering — 28+ Modules</h5>
+      <p class="timeline-org">Apponix Technologies, Bengaluru</p>
+      <p class="cert-date">EC2 · S3 · IAM · VPC · Lambda · RDS · CloudFormation · DynamoDB · Route 53 · CloudFront</p>
+    </div>
+
+    <div class="cert-card glass-card">
+      <div class="cert-top">
+        <span class="cert-icon">⚙</span>
+        <span class="cert-status">✓ verified</span>
+      </div>
+      <h5>DevOps Engineering Certification</h5>
+      <p class="timeline-org">Apponix Technologies, Bengaluru</p>
+      <p class="cert-date">Jenkins · Docker · Kubernetes · Ansible · Git · CI/CD Pipelines</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <p class="section-label">// 06_contact</p>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3 class="section-heading">Let's build<br>something reliable.</h3>
+      <p class="contact-sub">Open to roles in Linux administration, AWS cloud engineering, DevOps, and SRE. Drop a message or reach out directly.</p>
+      <div class="contact-links">
+        <a href="mailto:ashfaqsde@gmail.com" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4V4z"/><path d="M22 6l-10 7L2 6"/></svg>
+          ashfaqsde@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/mohamedashfaq" target="_blank" rel="noopener" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          linkedin.com/in/mohamedashfaq
+        </a>
+        <a href="https://github.com/ashfaqsde" target="_blank" rel="noopener" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          github.com/ashfaqsde
+        </a>
+        <a href="tel:+918903707362" class="contact-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          +91 89037 07362
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form glass-card" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="2ffdf0b5-417c-42cf-82be-a4fc380badee">
+      <input type="hidden" name="subject" value="New portfolio enquiry from your site">
+      <input type="checkbox" name="botcheck" class="hidden-field" style="display:none">
+
+      <label class="field-label" for="name">name</label>
+      <input class="field-input" type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label class="field-label" for="email">email</label>
+      <input class="field-input" type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label class="field-label" for="message">message</label>
+      <textarea class="field-input" id="message" name="message" rows="4" placeholder="Let's talk about..." required></textarea>
+
+      <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+        <span id="submit-text">Send Message</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      </button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <span>© 2026 Mohamed Ashfaq</span>
+  <span class="footer-mono">root@portfolio:~$ status — online</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
